@@ -6,10 +6,11 @@ using UnityEngine.UI;
 public class MuteButton : MonoBehaviour
 {
     private const float MuteVolume = -80f;
-    private readonly string _masterVolumeVariable = Enum.GetName(typeof(MixerVariables), MixerVariables.MasterVolume);
 
     [SerializeField] private Button _button;
     [SerializeField] private AudioMixer _audioMixer;
+    
+    private readonly string _masterVolumeVariable = Enum.GetName(typeof(MixerVariables), MixerVariables.MasterVolume);
     private float _currentVolume;
     private bool _isMuted;
 

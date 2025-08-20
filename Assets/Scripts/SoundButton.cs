@@ -11,7 +11,6 @@ public class SoundButton : MonoBehaviour
         _audioSource = GetComponent<AudioSource>();
     }
 
-
     private void OnEnable()
     {
         _button.onClick.AddListener(PlaySound);
